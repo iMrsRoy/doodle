@@ -81,3 +81,69 @@ h1 {
 .shih-poo {
     background-color: #ffcccc;
 }
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color:#ccffcc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container {
+    background-color: #ffebcc;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #ffcccc(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+} 
+.logo {
+    font-size: 1.5rem;
+    color: pink;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ccffcc;
+    text-decoration: none;
+    font-size: 1rem;
+}
