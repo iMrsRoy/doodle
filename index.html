@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Doodle Breeds</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Mini Doodle Breeds</h1>
-        <div class="doodle-image">
-            <img src="https://i.ytimg.com/vi/WxDWPiOGmzw/maxresdefault.jpg" alt="Doodle Picture">
+    <header>
+        <div class="container">
+            <div class="logo">MySite</div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="doodles.html">Doodles</a></li>
+                    <li><a href="#">Cavapoo</a></li>
+                    <li><a href="#">Pawrent</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="info-boxes">
-            <div class="info-box cavapoo">
-                <h2>Cavapoo</h2>
-                <img src="https://www.natureplprints.com/p/729/cavapoo-puppy-lying-head-18331251.jpg.webp">
-                <p>Learn more about the Cavapoo.</p>
+    </header>
+
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
             </div>
-            <div class="info-box pomapoo">
-                <h2>Pomapoo</h2>
-                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzYiU6WrBSwUqFgPJ1FO-MSQc3iq9S6buMbjNIbHFMvV5PBKeb">
-                <p>Learn more about the Pomapoo.</p>
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
             </div>
-            <div class="info-box shih-poo">
-                <h2>Shih-poo</h2>
-                <img src="https://premierpups.com/azure/premierphotos/pups/shih-poo--all-about-the-happy-little-dogs--premier-pups-637698956241806230.jpg?w=557&h=557&mode=crop&autorotate=1">
-                <p>Learn more about the Shih-poo.</p>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
             </div>
-        </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="login-email" required>
+            </div>
+            <div class="input-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
     </div>
-    
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
